@@ -1,4 +1,4 @@
-function Remove-pcCMScheduledScript {
+function Remove-CMScheduledScript {
         <#
         .SYNOPSIS
         Attempts to retrieve and delete Scheduled Script deployments from the Microsoft Configuration Manager database.
