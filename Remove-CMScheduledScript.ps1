@@ -25,7 +25,7 @@ function Remove-CMScheduledScript {
         None.
 
         .EXAMPLE
-        PS> Remove-pcCMScheduledScript -ScheduleID a6367634-6c46-4a2a-abb2-54370b053afe
+        PS> Remove-CMScheduledScript -ScheduleID a6367634-6c46-4a2a-abb2-54370b053afe
         Found matching scheduled script deployment:
 
 
@@ -46,7 +46,7 @@ function Remove-CMScheduledScript {
         Scheduled script deployment has been deleted.
 
         .EXAMPLE
-        PS> Remove-pcCMScheduledScript -InputObject $object
+        PS> Remove-CMScheduledScript -InputObject $object
         Found matching scheduled script deployment:
 
 
@@ -67,7 +67,7 @@ function Remove-CMScheduledScript {
         Scheduled script deployment has been deleted.
 
         .LINK
-        Get-pcCMScheduledScript
+        Get-CMScheduledScript
     #>
 
     [CmdletBinding(SupportsShouldProcess,DefaultParameterSetName="StringInput")]
