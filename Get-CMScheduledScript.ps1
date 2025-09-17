@@ -30,7 +30,7 @@ function Get-CMScheduledScript {
         System.Data.DataRow
 
         .EXAMPLE
-        PS> Get-pcCMScheduledScript -ScheduleID <DeploymentID>
+        PS> Get-CMScheduledScript -ScheduleID <DeploymentID>
 
         ScheduleId        : a6367634-6c46-4a2a-abb2-54370b053afe
         ScriptGuid        : d676c633-f80b-4531-91af-849df1d019bf
@@ -43,7 +43,7 @@ function Get-CMScheduledScript {
         ScheduleTime      : 5/24/2025 3:22:36 PM
 
         .EXAMPLE
-        PS> Get-pcCMScheduledScript -ScriptName <ScriptName>
+        PS> Get-CMScheduledScript -ScriptName <ScriptName>
 
         ScheduleId        : a6367634-6c46-4a2a-abb2-54370b053afe
         ScriptGuid        : d676c633-f80b-4531-91af-849df1d019bf
@@ -58,6 +58,9 @@ function Get-CMScheduledScript {
         .NOTES
         There doesn't seem to be a way to do this without an explicit connection into the database. While there are WMI/CIM
         classes for scripts, none of them contain information about scheduled scripts.
+
+        .LINK
+        Remove-CMScheduledScript
     #>
 
 
