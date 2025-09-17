@@ -1,4 +1,4 @@
-function Get-pcCMScheduledScript {
+function Get-CMScheduledScript {
 
         <#
         .SYNOPSIS
